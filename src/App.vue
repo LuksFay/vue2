@@ -1,12 +1,18 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div>
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link> |
+      <router-link to="/services">Services</router-link> | 
+      <router-link to="/photos/1">Photos</router-link>
+    </div>
+    <router-view/>
   </div>
-  <router-view/>
 </template>
 
 <style>
+@import "~@/assets/scss/vendors/bootstrap-vue/index";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
